@@ -5,16 +5,16 @@ import {
   CalendarIcon,
   FlagIcon,
   MapIcon,
-  SparklesIcon,
+  SparklesIcon
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -23,9 +23,7 @@ import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpeg';
+import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -251,43 +249,61 @@ export const portfolioItems: PortfolioItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'November 2022 - Present',
+    location: 'Santander Digital Servies',
+    title: 'Engineering Manager',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'January 2021 - September 2022',
+    location: 'Plexus Tech',
+    title: 'Tech Lead',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I built a robust background in client relationship management, team leadership, project planning, and technical definition. Proven ability to effectively engage with clients, ensuring their needs are understood and met to achieve high levels of satisfaction. Experienced in leading and motivating teams to deliver projects on time and within budget. Skilled in strategic project planning, including resource allocation and risk management. Proficient in providing technical guidance and defining project requirements to ensure successful outcomes. Adept at fostering collaborative environments to drive innovation and excellence.
       </p>
     ),
+  },
+  {
+    date: 'August 2019 - December 2021',
+    location: 'Plexus Tech',
+    title: 'Senior Developer',
+    content: (
+      <p>
+        I became proficient in Angular and TypeScript, with a strong emphasis on Test-Driven Development (TDD) practices. Skilled in Agile methodologies, particularly Scrum, for efficient project management and delivery. Committed to writing clean, maintainable code that adheres to best practices and industry standards. Demonstrated ability to work collaboratively within cross-functional teams to achieve project goals and deliver high-quality software solutions.
+      </p>
+    ),
+  },
+  {
+    date: 'August 2015 - December 2019',
+    location: 'CITECAM',
+    title: 'Junior Developer',
+    content: (
+      <p>
+        Extensive experience in full-stack development utilizing Node.js, Angular, and React frameworks. Proficient in managing both SQL and NoSQL databases to deliver scalable and efficient solutions. Skilled in cloud computing platforms such as AWS and Azure, with a proven track record of deploying and managing applications in the cloud. Experienced in version control using Git and Gitflow methodologies. Additionally, proficient in Python and Go languages, demonstrating adaptability and versatility in tackling diverse technical challenges. Committed to delivering high-quality, innovative solutions that drive business success.
+      </p>
+    ),
+  }
+];
+
+export const education: TimelineItem[] = [
+  {
+    date: 'June 2016',
+    location: 'Tech School',
+    title: 'Certificate of Higher Education - Applications Development',
+    content: <p>Graduated with honors and an outstanding GPA of 9.18, I have a strong academic background coupled with an exceptional commitment to excellence. My focus on the internal migration project not only showcased my ability to tackle complex challenges but also demonstrated my capacity to work collaboratively and effectively in multidisciplinary teams.</p>,
+  },
+  {
+    date: 'June 2014',
+    location: 'Tech School',
+    title: 'Certificate of Higher Education - System Admin',
+    content: <p>With an outstanding GPA of 9.62, I stand out as a dedicated student with high academic achievements. My role as a intern at ViewNext not only provided me with valuable hands-on experience but also enhanced my technical skills and ability to adapt to demanding professional environments.</p>,
   },
 ];
 
