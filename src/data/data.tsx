@@ -53,7 +53,6 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -253,10 +252,11 @@ export const portfolioItems: PortfolioItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'November 2022 - Present',
-    location: 'Santander Digital Servies',
+    location: 'Santander Digital Services',
     title: 'Engineering Manager',
     content: (
       <p>
+        Extensive experience in developing large-scale applications, with a comprehensive focus on both frontend using Angular and backend utilizing Java and Spring Boot. Strong project management skills, leading multidisciplinary teams with a customer-centric approach. Demonstrated ability to thrive in dynamic environments and adapt quickly to changes, ensuring the delivery of high-quality projects within established timelines. Excellent communication and collaboration skills, fostering effective relationships with internal and external stakeholders to ensure project success.
       </p>
     ),
   },
@@ -337,17 +337,17 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: `I'm here to power your tech projects. Reach out now, and let's take your ideas to the next level. I'm eager to hear about your challenges and collaborate to achieve your goals.`,
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'mromerolopez343@gmail.com',
+      href: 'mailto:mromerolopez343@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Madrid, Spain',
+      href: 'https://maps.app.goo.gl/pdt8BX7ACfr3wdi97',
     },
     {
       type: ContactType.Github,
