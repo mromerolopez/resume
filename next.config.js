@@ -16,6 +16,7 @@ const nextConfig = {
     return config;
   },
   output: 'export',
+  basePath: '/resume',
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
