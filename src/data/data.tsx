@@ -70,7 +70,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/resume/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -83,21 +83,28 @@ export const heroData: Hero = {
   ],
 };
 
+const getExperienceYears: () => number = () => {
+  const startDate: Date = new Date('04/01/2015');
+  const now: Date = new Date();
+  let diff = (now.getTime() - startDate.getTime()) / 1000;
+  diff /= (60 * 60 * 24);
+  return Math.abs(Math.round(diff / 365.25));
+};
+
 const getAge: () => number = () => {
   const birthDay: Date = new Date('09/04/1988 12:00:00');
   const now: Date = new Date();
-
   let diff = (now.getTime() - birthDay.getTime()) / 1000;
   diff /= (60 * 60 * 24);
   return Math.abs(Math.round(diff / 365.25));
-}
+};
 
 /**
  * About section
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I have a strong 9-year background in software development, covering both frontend and backend, with a focus on Angular, Java and Node. Additionally, I’ve honed leadership abilities through managing software teams and projects. My career reflects a consistent dedication to delivering innovative, high-quality technological solutions.`,
+  description: `I have a strong ${getExperienceYears()}-year background in software development, covering both frontend and backend, with a focus on Angular, Java and Node. Additionally, I've honed leadership abilities through managing software teams and projects. My career reflects a consistent dedication to delivering innovative, high-quality technological solutions.`,
   aboutItems: [
     { label: 'Location', text: 'Madrid, Spain', Icon: MapIcon },
     { label: 'Age', text: getAge().toString(), Icon: CalendarIcon },
@@ -257,8 +264,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'mromerolopez343@gmail.com',
-      href: 'mailto:mromerolopez343@gmail.com',
+      text: 'miky.rl@gmail.com',
+      href: 'mailto:miky.rl@gmail.com',
     },
     {
       type: ContactType.Location,
