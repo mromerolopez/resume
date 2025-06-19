@@ -1,33 +1,38 @@
 import { FC, memo } from 'react';
-
 import { education, experience, SectionId, skills } from '../../../data/data';
 import Section from '../../Layout/Section';
-import ResumeSection from './ResumeSection';
-import { SkillGroup } from './Skills';
-import TimelineItem from './TimelineItem';
 
 const Resume: FC = memo(() => {
   return (
-    <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
-      <div className="flex flex-col divide-y-2 divide-neutral-300">
-        <ResumeSection title="Work">
-          {experience.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
-        </ResumeSection>
-        <ResumeSection title="Education">
-          {education.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
-          ))}
-        </ResumeSection>
-        <ResumeSection title="Skills">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {skills.map((skillgroup, index) => (
-              <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
-            ))}
-          </div>
-        </ResumeSection>
-      </div>
+    <Section sectionId={SectionId.Resume}>
+      <h2>Work</h2>
+      <ul>
+        {experience.map((item, index) => (
+          <li key={`${item.title}-${index}`} style={{ marginBottom: '1.5rem' }}>
+            <div><strong>{item.title}</strong> – {item.location}</div>
+            <div style={{ fontSize: '0.95em', color: '#666' }}>{item.date}</div>
+            <div>{item.content}</div>
+          </li>
+        ))}
+      </ul>
+      <h2>Education</h2>
+      <ul>
+        {education.map((item, index) => (
+          <li key={`${item.title}-${index}`} style={{ marginBottom: '1.5rem' }}>
+            <div><strong>{item.title}</strong> – {item.location}</div>
+            <div style={{ fontSize: '0.95em', color: '#666' }}>{item.date}</div>
+            <div>{item.content}</div>
+          </li>
+        ))}
+      </ul>
+      <h2>Skills</h2>
+      <ul>
+        {skills.map((skillgroup, index) => (
+          <li key={`${skillgroup.name}-${index}`}>
+            <strong>{skillgroup.name}:</strong> {skillgroup.skills.map(s => s.name).join(', ')}
+          </li>
+        ))}
+      </ul>
     </Section>
   );
 });
