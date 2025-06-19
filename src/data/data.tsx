@@ -11,18 +11,16 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import backgroundImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
   ContactType,
-  Hero,
+  Me,
   HomepageMeta,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -38,7 +36,7 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
+  Me: 'me',
   About: 'about',
   Contact: 'contact',
   Resume: 'resume',
@@ -50,10 +48,10 @@ export const SectionId = {
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
- * Hero section
+ * Me section
  */
-export const heroData: Hero = {
-  imageSrc: heroImage,
+export const meData: Me = {
+  imageSrc: backgroundImage,
   name: `Hi, I'm Miguel Romero`,
   description: (
     <>

@@ -20,7 +20,7 @@ export interface HomepageMeta {
 /**
  * Hero section
  */
-export interface Hero {
+export interface Me {
   imageSrc: string;
   name: string;
   description: JSX.Element;
