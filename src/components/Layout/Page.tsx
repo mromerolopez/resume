@@ -28,7 +28,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta name="revisit-after" content="7 days" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://miguelromero.dev" />
+        <link rel="canonical" href="https://mromerolopez.github.io/resume/" />
 
         {/* Favicon and Icons */}
         <link href="/favicon.ico" rel="icon" sizes="any" />
@@ -39,7 +39,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         {/* Open Graph : https://ogp.me/ */}
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
-        <meta content="https://miguelromero.dev" property="og:url" />
+        <meta content="https://mromerolopez.github.io/resume/" property="og:url" />
         <meta content="website" property="og:type" />
         <meta content="Miguel Romero" property="og:site_name" />
         <meta content="/profilepic.jpg" property="og:image" />
@@ -82,7 +82,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
                 "@type": "Organization",
                 "name": "Santander Digital Services"
               },
-              "url": "https://miguelromero.dev",
+              "url": "https://mromerolopez.github.io/resume/",
               "sameAs": [
                 "https://github.com/miguelromero",
                 "https://linkedin.com/in/miguelromero",

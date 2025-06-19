@@ -1,6 +1,6 @@
 /* eslint-env node */
 module.exports = {
-  siteUrl: 'https://miguelromero.dev',
+  siteUrl: 'https://mromerolopez.github.io/resume/',
   exclude: ['/404*', '/500*'],
   transform: async (config, path) => {
     return {
@@ -23,7 +23,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://miguelromero.dev/sitemap.xml',
+      'https://mromerolopez.github.io/resume/sitemap.xml',
     ],
   },
 };
