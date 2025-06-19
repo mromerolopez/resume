@@ -12,7 +12,6 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import backgroundImage from '../images/header-background.webp';
-import profilepic from '../images/profilepic.jpg';
 import {
   About,
   ContactSection,

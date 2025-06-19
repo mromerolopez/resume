@@ -1,7 +1,6 @@
 import { FC, memo } from 'react';
 import { aboutData, SectionId } from '../../data/data';
 import Section from '../Layout/Section';
-import OptimizedImage from '../OptimizedImage';
 
 const About: FC = memo(() => {
   const { description, aboutItems } = aboutData;
