@@ -56,7 +56,7 @@ export const meData: Me = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Spain based <strong className="text-stone-100">Full Stack Engineer & Team Lead</strong> @ <strong className="text-stone-100"><a target="_blank" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>
+        I'm a Spain based <strong className="text-stone-100">Full Stack Engineer & Team Lead</strong> @ <strong className="text-stone-100"><a target="_blank" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>. 
         I design, build, and lead the development of robust, scalable digital products.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -243,8 +243,8 @@ export const education: TimelineItem[] = [
     location: 'Tech School',
     title: 'Certificate of Higher Education - System Admin',
     content: <p>
-       Achieved a top GPA of 3.85/4.
-       Gained hands-on experience as an intern at ViewNext, sharpening technical skills and adaptability in fast-paced environments.
+      Achieved a top GPA of 3.85/4.
+      Gained hands-on experience as an intern at ViewNext, sharpening technical skills and adaptability in fast-paced environments.
     </p>,
   },
 ];
@@ -255,17 +255,21 @@ export const education: TimelineItem[] = [
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: `Let's build something great. Open to new projects, collaborations, and tech challenges. Drop me a line and let's connect.`,
+  description: [
+    `Let's build something great.`,
+    `Open to new projects, collaborations, and tech challenges.`,
+    `Drop me a line and let's connect.`
+  ],
   items: [
+    {
+      type: ContactType.LinkedIn,
+      text: 'miguel-romero-lópez',
+      href: 'https://www.linkedin.com/in/miguel-romero-lópez-916bba98/',
+    },
     {
       type: ContactType.Email,
       text: 'miky.rl@gmail.com',
       href: 'mailto:miky.rl@gmail.com',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Madrid, Spain',
-      href: 'https://maps.app.goo.gl/pdt8BX7ACfr3wdi97',
     },
     {
       type: ContactType.Github,
@@ -273,10 +277,10 @@ export const contact: ContactSection = {
       href: 'https://github.com/mromerolopez',
     },
     {
-      type: ContactType.LinkedIn,
-      text: 'miguel-romero-lópez',
-      href: 'https://www.linkedin.com/in/miguel-romero-lópez-916bba98/',
-    },
+      type: ContactType.Location,
+      text: 'Madrid, Spain',
+      href: 'https://maps.app.goo.gl/pdt8BX7ACfr3wdi97',
+    }
   ],
 };
 
