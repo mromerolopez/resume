@@ -54,17 +54,15 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Miguel Romero`,
+  name: `Hi, I'm Miguel Romero`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Spain based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        as Team Lead at <strong className="text-stone-100"><a target="_blank" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong> helping build modern, mobile-first, customer face applications.
+        I'm a Spain based <strong className="text-stone-100">Full Stack Engineer & Team Lead</strong> @ <strong className="text-stone-100"><a target="_blank" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>
+        I design, build, and lead the development of robust, scalable digital products.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me inmerse in <strong className="text-stone-100">science fiction literature</strong>,
-        enjoying <strong className="text-stone-100">motorcyle rides</strong>, or exploring the beautiful{' '}
-        <strong className="text-stone-100">mountains of center Spain</strong>.
+        Off the clock: <strong className="text-stone-100">sci-fi books, motorcycles,</strong> and <strong className="text-stone-100">mountain trails</strong>.
       </p>
     </>
   ),
@@ -104,7 +102,7 @@ const getAge: () => number = () => {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I have a strong ${getExperienceYears()}-year background in software development, covering both frontend and backend, with a focus on Angular, Java and Node. Additionally, I've honed leadership abilities through managing software teams and projects. My career reflects a consistent dedication to delivering innovative, high-quality technological solutions.`,
+  description: `With over ${getExperienceYears()} years in software engineering, I specialize in both frontend and backend, mainly with Angular, Java, and Node. I thrive on leading teams, solving complex problems, and delivering high-impact solutions. My focus: quality, innovation, and continuous improvement.`,
   aboutItems: [
     { label: 'Location', text: 'Madrid, Spain', Icon: MapIcon },
     { label: 'Age', text: getAge().toString(), Icon: CalendarIcon },
@@ -179,7 +177,9 @@ export const experience: TimelineItem[] = [
     title: 'Engineering Manager',
     content: (
       <p>
-        Extensive experience in developing large-scale applications, with a comprehensive focus on both frontend using Angular and backend utilizing Java and Spring Boot. Strong project management skills, leading multidisciplinary teams with a customer-centric approach. Demonstrated ability to thrive in dynamic environments and adapt quickly to changes, ensuring the delivery of high-quality projects within established timelines. Excellent communication and collaboration skills, fostering effective relationships with internal and external stakeholders to ensure project success.
+        Led the development of large-scale, customer-facing applications (Angular, Java, Spring Boot).
+        Managed multidisciplinary teams, ensuring timely delivery and high quality.
+        Adaptable, communicative, and focused on client success.
       </p>
     ),
   },
@@ -189,7 +189,12 @@ export const experience: TimelineItem[] = [
     title: 'Tech Lead',
     content: (
       <p>
-        I built a robust background in client relationship management, team leadership, project planning, and technical definition. Proven ability to effectively engage with clients, ensuring their needs are understood and met to achieve high levels of satisfaction. Experienced in leading and motivating teams to deliver projects on time and within budget. Skilled in strategic project planning, including resource allocation and risk management. Proficient in providing technical guidance and defining project requirements to ensure successful outcomes. Adept at fostering collaborative environments to drive innovation and excellence.
+        Built strong foundations in client relations, team leadership, and technical strategy.
+        I engage directly with clients to understand and deliver on their needs.
+        Led and motivated teams to deliver projects on time and within budget.
+        Skilled in project planning, resource allocation, and risk management.
+        Provide clear technical guidance and define requirements for successful outcomes.
+        Foster collaborative, innovative environments that drive results.
       </p>
     ),
   },
@@ -199,7 +204,10 @@ export const experience: TimelineItem[] = [
     title: 'Senior Developer',
     content: (
       <p>
-        I became proficient in Angular and TypeScript, with a strong emphasis on Test-Driven Development (TDD) practices. Skilled in Agile methodologies, particularly Scrum, for efficient project management and delivery. Committed to writing clean, maintainable code that adheres to best practices and industry standards. Demonstrated ability to work collaboratively within cross-functional teams to achieve project goals and deliver high-quality software solutions.
+        Proficient in Angular and TypeScript, with a focus on Test-Driven Development (TDD).
+        Experienced in Agile environments (Scrum) for efficient project delivery.
+        Committed to writing clean, maintainable code that meets industry standards.
+        Thrive in cross-functional teams to achieve goals and deliver quality software.
       </p>
     ),
   },
@@ -209,7 +217,12 @@ export const experience: TimelineItem[] = [
     title: 'Junior Developer',
     content: (
       <p>
-        Extensive experience in full-stack development utilizing Node.js, Angular, and React frameworks. Proficient in managing both SQL and NoSQL databases to deliver scalable and efficient solutions. Skilled in cloud computing platforms such as AWS and Azure, with a proven track record of deploying and managing applications in the cloud. Experienced in version control using Git and Gitflow methodologies. Additionally, proficient in Python and Go languages, demonstrating adaptability and versatility in tackling diverse technical challenges. Committed to delivering high-quality, innovative solutions that drive business success.
+        Full-stack developer with hands-on experience in Node.js, Angular, and React.
+        Skilled in both SQL and NoSQL databases to build scalable, efficient solutions.
+        Cloud-savvy: deployed and managed apps on AWS and Azure.
+        Strong command of Git and Gitflow for version control.
+        Versatile in Python and Go, adapting quickly to new technical challenges.
+        Focused on delivering innovative, high-quality solutions that drive results.
       </p>
     ),
   }
@@ -220,39 +233,21 @@ export const education: TimelineItem[] = [
     date: 'June 2016',
     location: 'Tech School',
     title: 'Certificate of Higher Education - Applications Development',
-    content: <p>Graduated with honors and an outstanding GPA of 9.18, I have a strong academic background coupled with an exceptional commitment to excellence. My focus on the internal migration project not only showcased my ability to tackle complex challenges but also demonstrated my capacity to work collaboratively and effectively in multidisciplinary teams.</p>,
+    content: <p>
+      Graduated with honors (GPA 3.67/4).
+      Tackled complex migration projects, demonstrating problem-solving skills and effective teamwork in multidisciplinary environments.
+    </p>,
   },
   {
     date: 'June 2014',
     location: 'Tech School',
     title: 'Certificate of Higher Education - System Admin',
-    content: <p>With an outstanding GPA of 9.62, I stand out as a dedicated student with high academic achievements. My role as a intern at ViewNext not only provided me with valuable hands-on experience but also enhanced my technical skills and ability to adapt to demanding professional environments.</p>,
+    content: <p>
+       Achieved a top GPA of 3.85/4.
+       Gained hands-on experience as an intern at ViewNext, sharpening technical skills and adaptability in fast-paced environments.
+    </p>,
   },
 ];
-
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
 
 /**
  * Contact section
@@ -260,7 +255,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: `I'm here to power your tech projects. Reach out now, and let's take your ideas to the next level. I'm eager to hear about your challenges and collaborate to achieve your goals.`,
+  description: `Let's build something great. Open to new projects, collaborations, and tech challenges. Drop me a line and let's connect.`,
   items: [
     {
       type: ContactType.Email,
@@ -276,6 +271,11 @@ export const contact: ContactSection = {
       type: ContactType.Github,
       text: 'mromerolopez',
       href: 'https://github.com/mromerolopez',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'miguel-romero-lópez',
+      href: 'https://www.linkedin.com/in/miguel-romero-lópez-916bba98/',
     },
   ],
 };

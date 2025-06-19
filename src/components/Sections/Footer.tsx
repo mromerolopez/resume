@@ -19,6 +19,8 @@ const Footer: FC = memo(() => (
       <div className="flex gap-x-4 text-neutral-500">
         <Socials />
       </div>
+      <span className="text-sm text-neutral-700">Built with Next.js & Tailwind CSS</span>
+      <span className="text-sm text-neutral-700">Inspired by the best in tech</span>
       <span className="text-sm text-neutral-700">© Copyright {currentYear} Miguel Romero</span>
     </div>
   </div>
