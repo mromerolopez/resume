@@ -42,7 +42,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content="https://mromerolopez.github.io/resume/" property="og:url" />
         <meta content="website" property="og:type" />
         <meta content="Miguel Romero" property="og:site_name" />
-        <meta content="/profilepic.jpg" property="og:image" />
+        <meta content="/resume/profilepic.jpg" property="og:image" />
         <meta content="1200" property="og:image:width" />
         <meta content="630" property="og:image:height" />
 
@@ -50,7 +50,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content="summary_large_image" name="twitter:card" />
         <meta content={title} name="twitter:title" />
         <meta content={description} name="twitter:description" />
-        <meta content="/profilepic.jpg" name="twitter:image" />
+        <meta content="/resume/profilepic.jpg" name="twitter:image" />
         <meta content="@miguelromero" name="twitter:creator" />
 
         {/* Additional SEO */}
@@ -66,7 +66,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         />
 
         {/* Preload critical resources */}
-        <link rel="preload" href="/profilepic.jpg" as="image" />
+        <link rel="preload" href="/resume/profilepic.jpg" as="image" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
         {/* Structured Data */}
