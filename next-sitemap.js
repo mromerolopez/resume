@@ -1,12 +1,12 @@
 /* eslint-env node */
 module.exports = {
-  siteUrl: 'reactresume.com',
+  siteUrl: 'https://miguelromero.dev',
   exclude: ['/404*', '/500*'],
   transform: async (config, path) => {
     return {
       loc: path,
-      changefreq: config.changefreq,
-      priority: path === '/' ? 1 : config.priority,
+      changefreq: path === '/' ? 'weekly' : 'monthly',
+      priority: path === '/' ? 1.0 : 0.8,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
     };
   },
@@ -21,6 +21,9 @@ module.exports = {
         userAgent: '*',
         disallow: ['/404', '/500'],
       },
+    ],
+    additionalSitemaps: [
+      'https://miguelromero.dev/sitemap.xml',
     ],
   },
 };

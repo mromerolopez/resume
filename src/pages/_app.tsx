@@ -4,8 +4,13 @@ import '../globalStyles.scss';
 import type { AppProps } from 'next/app';
 import Script from 'next/script';
 import { memo } from 'react';
+import { usePageTracking } from '../hooks/usePageTracking';
+import { reportWebVitals } from '../utils/web-vitals';
 
 const MyApp = memo(({ Component, pageProps }: AppProps): JSX.Element => {
+  // Track page views
+  usePageTracking();
+
   return (
     <>
       {/* Google Analytics */}
@@ -18,7 +23,10 @@ const MyApp = memo(({ Component, pageProps }: AppProps): JSX.Element => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-RVXZB8SSBM');
+          gtag('config', 'G-RVXZB8SSBM', {
+            page_title: document.title,
+            page_location: window.location.href,
+          });
         `}
       </Script>
       {/* Tu app */}
@@ -26,5 +34,10 @@ const MyApp = memo(({ Component, pageProps }: AppProps): JSX.Element => {
     </>
   );
 });
+
+// Report Web Vitals
+if (typeof window !== 'undefined') {
+  reportWebVitals();
+}
 
 export default MyApp;

@@ -1,11 +1,17 @@
 {
-  "name": "react-resume-template",
-  "short_name": "react-resume-template",
+  "name": "Miguel Romero - Full Stack Engineer & Team Lead",
+  "short_name": "Miguel Romero",
+  "description": "Full Stack Engineer & Team Lead at Santander Digital Services. Specialized in Angular, Java, and Node.js development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#181818",
+  "theme_color": "#181818",
+  "orientation": "portrait-primary",
   "icons": [
     {"src": "/icon-192.png", "type": "image/png", "sizes": "192x192"},
     {"src": "/icon-512.png", "type": "image/png", "sizes": "512x512"}
   ],
-  "theme_color": "#515455",
-  "background_color": "#515455",
-  "display": "standalone"
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
 }
