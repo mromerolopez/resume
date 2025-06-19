@@ -68,12 +68,14 @@ export const meData: Me = {
     {
       href: '/resume/assets/resume.pdf',
       text: 'Resume',
+      target: '_blank',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
+      target: '_self',
       primary: false,
     },
   ],
