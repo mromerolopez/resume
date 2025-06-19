@@ -28,8 +28,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Miguel Romero | Resume',
-  description: 'Explore my professional journey, standout projects, and technical skills as you discover how my passion for technology and innovation has driven my career forward',
+  title: 'Miguel Romero | Full Stack Engineer & Team Lead | Madrid, Spain',
+  description: 'Miguel Romero is a Full Stack Engineer and Team Lead at Santander Digital Services in Madrid, Spain. Specialized in Angular, Java, Node.js, and leading development teams. 8+ years of experience in software engineering.',
 };
 
 /**

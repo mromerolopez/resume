@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mromerolopez.github.io/resume/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
