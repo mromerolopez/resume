@@ -4,25 +4,11 @@ import Section from '../Layout/Section';
 import OptimizedImage from '../OptimizedImage';
 
 const About: FC = memo(() => {
-  const { description, aboutItems, profileImageSrc } = aboutData;
+  const { description, aboutItems } = aboutData;
   return (
     <Section sectionId={SectionId.About}>
       <h2>About me</h2>
       <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem', marginBottom: '2rem' }}>
-        {profileImageSrc && (
-          <OptimizedImage
-            src={profileImageSrc}
-            alt="Miguel Romero - Full Stack Engineer and Team Lead"
-            width={120}
-            height={120}
-            priority={true}
-            style={{
-              borderRadius: '50%',
-              objectFit: 'cover',
-              flexShrink: 0
-            }}
-          />
-        )}
         <p>{description}</p>
       </div>
       <ul>

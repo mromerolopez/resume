@@ -101,7 +101,6 @@ const getAge: () => number = () => {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
   description: `With over ${getExperienceYears()} years in software engineering, I specialize in both frontend and backend, mainly with Angular, Java, and Node. I thrive on leading teams, solving complex problems, and delivering high-impact solutions. My focus: quality, innovation, and continuous improvement.`,
   aboutItems: [
     { label: 'Location', text: 'Madrid, Spain', Icon: MapIcon },
