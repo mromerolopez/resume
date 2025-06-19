@@ -10,7 +10,7 @@ const MyApp = memo(({ Component, pageProps }: AppProps): JSX.Element => {
     <>
       {/* Google Analytics */}
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-RVXZB8SSBM`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
