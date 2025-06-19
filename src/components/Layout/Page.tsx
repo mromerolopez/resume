@@ -103,7 +103,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
                 "Software Engineering",
                 "Team Leadership"
               ],
-              "description": "Full Stack Engineer and Team Lead with 8+ years of experience in software development, specializing in Angular, Java, and Node.js technologies."
+              "description": "Full Stack Engineer and Team Lead with 10+ years of experience in software development, specializing in Angular, Java, and Node.js technologies."
             })
           }}
         />
