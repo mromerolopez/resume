@@ -49,3 +49,88 @@ th {
 th {
   font-weight: 600;
 }
+
+/* Minimalist global styles inspired by bellard.org */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  font-family: 'Fira Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 16px 80px 16px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 600;
+  color: #111;
+  margin: 2.5rem 0 1.2rem 0;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+p, ul, ol, li {
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+a {
+  color: #111;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #666;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Remove all Tailwind and custom backgrounds, borders, shadows, and colors */
+[class*="bg-"], [class*="shadow"], [class*="border"], [class*="text-"] {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: inherit !important;
+}
