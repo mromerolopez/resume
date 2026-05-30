@@ -35,8 +35,8 @@ const getExperienceYears: () => number = () => {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Miguel Romero | Full Stack Engineer & Team Lead | Madrid, Spain',
-  description: `Miguel Romero is a Full Stack Engineer and Team Lead at Santander Digital Services in Madrid, Spain. Specialized in Angular, Java, Node.js, and leading development teams. ${getExperienceYears()}+ years of experience in software engineering.`,
+  title: 'Miguel Romero | Platform Lead Manager | Madrid, Spain',
+  description: `Miguel Romero is a Platform Lead Manager at Santander Digital Services in Madrid, Spain. Specialized in Angular, Java, Node.js, and leading engineering teams. ${getExperienceYears()}+ years of experience in software engineering.`,
 };
 
 /**
@@ -63,7 +63,7 @@ export const meData: Me = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Spain based <strong className="text-stone-100">Full Stack Engineer & Team Lead</strong> @ <strong className="text-stone-100"><a target="_blank" rel="noopener noreferrer" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>.
+        I'm a Spain-based <strong className="text-stone-100">Platform Lead Manager</strong> @ <strong className="text-stone-100"><a target="_blank" rel="noopener noreferrer" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>.
         I design, build, and lead the development of robust, scalable digital products.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -100,7 +100,7 @@ const getAge: () => number = () => {
  * About section
  */
 export const aboutData: About = {
-  description: `With over ${getExperienceYears()} years in software engineering, I specialize in both frontend and backend, mainly with Angular, Java, and Node. I thrive on leading teams, solving complex problems, and delivering high-impact solutions. My focus: quality, innovation, and continuous improvement.`,
+  description: `With over ${getExperienceYears()} years in software engineering, I specialize in frontend and backend development — primarily Angular, Java, and Node.js — while leading cross-functional engineering teams. I focus on technical delivery, architecture decisions, and growing the people around me.`,
   aboutItems: [
     { label: 'Location', text: 'Madrid, Spain', Icon: MapIcon },
     { label: 'Age', text: getAge().toString(), Icon: CalendarIcon },
@@ -144,7 +144,37 @@ export const skills: SkillGroup[] = [
         level: 5,
       },
       {
+        name: 'Spring Boot',
+        level: 5,
+      },
+      {
         name: 'Golang',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Databases',
+    skills: [
+      {
+        name: 'SQL',
+        level: 7,
+      },
+      {
+        name: 'NoSQL',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Cloud',
+    skills: [
+      {
+        name: 'AWS',
+        level: 5,
+      },
+      {
+        name: 'Azure',
         level: 4,
       },
     ],
@@ -172,12 +202,12 @@ export const experience: TimelineItem[] = [
   {
     date: 'November 2022 - Present',
     location: 'Santander Digital Services',
-    title: 'Engineering Manager',
+    title: 'Platform Lead Manager',
     content: (
       <p>
-        Led the development of large-scale, customer-facing applications (Angular, Java, Spring Boot).
-        Managed multidisciplinary teams, ensuring timely delivery and high quality.
-        Adaptable, communicative, and focused on client success.
+        Lead the end-to-end delivery of large-scale, customer-facing banking applications built with Angular, Java, and Spring Boot.
+        Manage and mentor a cross-functional team of 20+ engineers across frontend and backend disciplines.
+        Define technical roadmaps, coordinate with product and architecture teams, and drive alignment between business goals and engineering execution.
       </p>
     ),
   },
@@ -187,12 +217,10 @@ export const experience: TimelineItem[] = [
     title: 'Tech Lead',
     content: (
       <p>
-        Built strong foundations in client relations, team leadership, and technical strategy.
-        I engage directly with clients to understand and deliver on their needs.
-        Led and motivated teams to deliver projects on time and within budget.
-        Skilled in project planning, resource allocation, and risk management.
-        Provide clear technical guidance and define requirements for successful outcomes.
-        Foster collaborative, innovative environments that drive results.
+        Acted as the primary technical contact for clients, translating business requirements into concrete engineering plans.
+        Led cross-functional teams through full project lifecycles, ensuring delivery on schedule and within budget.
+        Defined technical architecture, established coding standards, and mentored junior and mid-level developers.
+        Managed project planning, resource allocation, and risk mitigation across concurrent workstreams.
       </p>
     ),
   },
@@ -202,10 +230,9 @@ export const experience: TimelineItem[] = [
     title: 'Senior Developer',
     content: (
       <p>
-        Proficient in Angular and TypeScript, with a focus on Test-Driven Development (TDD).
-        Experienced in Agile environments (Scrum) for efficient project delivery.
-        Committed to writing clean, maintainable code that meets industry standards.
-        Thrive in cross-functional teams to achieve goals and deliver quality software.
+        Developed complex frontend applications with Angular and TypeScript, with a strong emphasis on Test-Driven Development (TDD).
+        Worked in Agile/Scrum teams, contributing to sprint planning, code reviews, and CI/CD pipelines.
+        Delivered clean, well-tested, and maintainable code across multiple concurrent client projects.
       </p>
     ),
   },
@@ -215,12 +242,10 @@ export const experience: TimelineItem[] = [
     title: 'Junior Developer',
     content: (
       <p>
-        Full-stack developer with hands-on experience in Node.js, Angular, and React.
-        Skilled in both SQL and NoSQL databases to build scalable, efficient solutions.
-        Cloud-savvy: deployed and managed apps on AWS and Azure.
-        Strong command of Git and Gitflow for version control.
-        Versatile in Python and Go, adapting quickly to new technical challenges.
-        Focused on delivering innovative, high-quality solutions that drive results.
+        Built full-stack applications using Node.js, Angular, React, and Go.
+        Designed and managed SQL and NoSQL databases for scalable data solutions.
+        Deployed and maintained applications on AWS and Azure cloud infrastructure.
+        Worked within Gitflow-based workflows across collaborative development teams.
       </p>
     ),
   }
@@ -229,7 +254,7 @@ export const experience: TimelineItem[] = [
 export const education: TimelineItem[] = [
   {
     date: 'June 2016',
-    location: 'Tech School',
+    location: 'C.I.F.P. Marcos Valcárcel',
     title: 'Certificate of Higher Education - Applications Development',
     content: <p>
       Graduated with honors (GPA 3.67/4).
@@ -238,7 +263,7 @@ export const education: TimelineItem[] = [
   },
   {
     date: 'June 2014',
-    location: 'Tech School',
+    location: 'C.I.F.P. Marcos Valcárcel',
     title: 'Certificate of Higher Education - System Admin',
     content: <p>
       Achieved a top GPA of 3.85/4.

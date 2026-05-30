@@ -78,7 +78,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Miguel Romero",
-              "jobTitle": "Full Stack Engineer & Team Lead",
+              "jobTitle": "Platform Lead Manager",
               "worksFor": {
                 "@type": "Organization",
                 "name": "Santander Digital Services"
@@ -104,7 +104,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
                 "Software Engineering",
                 "Team Leadership"
               ],
-              "description": "Full Stack Engineer and Team Lead with 11+ years of experience in software development, specializing in Angular, Java, and Node.js technologies."
+              "description": "Platform Lead Manager with 11+ years of experience in software engineering, specializing in Angular, Java, Node.js, and leading cross-functional engineering teams."
             })
           }}
         />
