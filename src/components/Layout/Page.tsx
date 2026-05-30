@@ -42,16 +42,17 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content="https://mromerolopez.github.io/resume/" property="og:url" />
         <meta content="website" property="og:type" />
         <meta content="Miguel Romero" property="og:site_name" />
-        <meta content="/resume/assets/profilepic.jpg" property="og:image" />
+        <meta content="https://mromerolopez.github.io/resume/assets/profilepic.jpg" property="og:image" />
         <meta content="1200" property="og:image:width" />
         <meta content="630" property="og:image:height" />
+        <meta content="Miguel Romero - Full Stack Engineer & Team Lead" property="og:image:alt" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}
         <meta content="summary_large_image" name="twitter:card" />
         <meta content={title} name="twitter:title" />
         <meta content={description} name="twitter:description" />
-        <meta content="/resume/assets/profilepic.jpg" name="twitter:image" />
-        <meta content="@miguelromero" name="twitter:creator" />
+        <meta content="https://mromerolopez.github.io/resume/assets/profilepic.jpg" name="twitter:image" />
+        <meta content="@Maldercito" name="twitter:creator" />
 
         {/* Additional SEO */}
         <meta name="theme-color" content="#181818" />
@@ -84,9 +85,9 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
               },
               "url": "https://mromerolopez.github.io/resume/",
               "sameAs": [
-                "https://github.com/miguelromero",
-                "https://linkedin.com/in/miguelromero",
-                "https://twitter.com/miguelromero"
+                "https://github.com/mromerolopez",
+                "https://www.linkedin.com/in/miguel-romero-lópez-916bba98/",
+                "https://twitter.com/Maldercito"
               ],
               "address": {
                 "@type": "PostalAddress",
@@ -103,7 +104,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
                 "Software Engineering",
                 "Team Leadership"
               ],
-              "description": "Full Stack Engineer and Team Lead with 10+ years of experience in software development, specializing in Angular, Java, and Node.js technologies."
+              "description": "Full Stack Engineer and Team Lead with 11+ years of experience in software development, specializing in Angular, Java, and Node.js technologies."
             })
           }}
         />

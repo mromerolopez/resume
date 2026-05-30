@@ -23,12 +23,20 @@ import {
   TimelineItem,
 } from './dataDef';
 
+const getExperienceYears: () => number = () => {
+  const startDate: Date = new Date('04/01/2015');
+  const now: Date = new Date();
+  let diff = (now.getTime() - startDate.getTime()) / 1000;
+  diff /= (60 * 60 * 24);
+  return Math.abs(Math.round(diff / 365.25));
+};
+
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Miguel Romero | Full Stack Engineer & Team Lead | Madrid, Spain',
-  description: 'Miguel Romero is a Full Stack Engineer and Team Lead at Santander Digital Services in Madrid, Spain. Specialized in Angular, Java, Node.js, and leading development teams. 8+ years of experience in software engineering.',
+  description: `Miguel Romero is a Full Stack Engineer and Team Lead at Santander Digital Services in Madrid, Spain. Specialized in Angular, Java, Node.js, and leading development teams. ${getExperienceYears()}+ years of experience in software engineering.`,
 };
 
 /**
@@ -55,7 +63,7 @@ export const meData: Me = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Spain based <strong className="text-stone-100">Full Stack Engineer & Team Lead</strong> @ <strong className="text-stone-100"><a target="_blank" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>. 
+        I'm a Spain based <strong className="text-stone-100">Full Stack Engineer & Team Lead</strong> @ <strong className="text-stone-100"><a target="_blank" rel="noopener noreferrer" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>.
         I design, build, and lead the development of robust, scalable digital products.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -78,14 +86,6 @@ export const meData: Me = {
       primary: false,
     },
   ],
-};
-
-const getExperienceYears: () => number = () => {
-  const startDate: Date = new Date('04/01/2015');
-  const now: Date = new Date();
-  let diff = (now.getTime() - startDate.getTime()) / 1000;
-  diff /= (60 * 60 * 24);
-  return Math.abs(Math.round(diff / 365.25));
 };
 
 const getAge: () => number = () => {
