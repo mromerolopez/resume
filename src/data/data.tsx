@@ -36,7 +36,7 @@ const getExperienceYears: () => number = () => {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Miguel Romero | Platform Lead Manager | Santander Insurance | Madrid',
-  description: `Miguel Romero is a Platform Lead Manager at Santander Digital Services, overseeing 5 engineering areas across the Insurance division with a team of 80+ professionals and a ~€20M annual budget. ${getExperienceYears()}+ years in software engineering and technical leadership.`,
+  description: `Miguel Romero is a Platform Lead Manager at Santander Digital Services, overseeing 5 engineering areas across the Insurance division with a team of 80+ professionals and a ~€10M annual budget. ${getExperienceYears()}+ years in software engineering and technical leadership.`,
 };
 
 /**
@@ -207,7 +207,7 @@ export const experience: TimelineItem[] = [
       <p>
         Report to the Technical Director of the Insurance area at Banco Santander.
         Oversee 5 engineering areas — new product development, post-sales, data, internal data control, and maintenance — with a team of 80+ professionals across internal and external vendors.
-        Manage an annual technology budget of ~€20M, coordinating resource allocation and budget planning with internal teams and third-party suppliers.
+        Manage an annual technology budget of ~€10M, coordinating resource allocation and budget planning with internal teams and third-party suppliers.
         Define joint strategies and set delivery priorities in collaboration with business stakeholders, ensuring value delivery within resource constraints.
         Lead coordination with commercial partners and the Santander Group for information exchange processes and regulatory data flows.
         Provide technical guidance to engineering teams on demand, bridging strategic leadership with hands-on problem solving.

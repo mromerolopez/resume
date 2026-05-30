@@ -110,7 +110,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
                 "Strategic Planning",
                 "Insurance Technology"
               ],
-              "description": "Platform Lead Manager overseeing 5 engineering areas in the Insurance division of Banco Santander, with a team of 80+ professionals and a ~€20M annual budget. 11+ years of experience bridging technical leadership and strategic delivery."
+              "description": "Platform Lead Manager overseeing 5 engineering areas in the Insurance division of Banco Santander, with a team of 80+ professionals and a ~€10M annual budget. 11+ years of experience bridging technical leadership and strategic delivery."
             })
           }}
         />
