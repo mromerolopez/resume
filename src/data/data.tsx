@@ -35,8 +35,8 @@ const getExperienceYears: () => number = () => {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Miguel Romero | Platform Lead Manager | Madrid, Spain',
-  description: `Miguel Romero is a Platform Lead Manager at Santander Digital Services in Madrid, Spain. Specialized in Angular, Java, Node.js, and leading engineering teams. ${getExperienceYears()}+ years of experience in software engineering.`,
+  title: 'Miguel Romero | Platform Lead Manager | Santander Insurance | Madrid',
+  description: `Miguel Romero is a Platform Lead Manager at Santander Digital Services, overseeing 5 engineering areas across the Insurance division with a team of 80+ professionals and a ~€20M annual budget. ${getExperienceYears()}+ years in software engineering and technical leadership.`,
 };
 
 /**
@@ -63,8 +63,8 @@ export const meData: Me = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Spain-based <strong className="text-stone-100">Platform Lead Manager</strong> @ <strong className="text-stone-100"><a target="_blank" rel="noopener noreferrer" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong>.
-        I design, build, and lead the development of robust, scalable digital products.
+        I'm a Spain-based <strong className="text-stone-100">Platform Lead Manager</strong> @ <strong className="text-stone-100"><a target="_blank" rel="noopener noreferrer" href="https://www.santanderdigitalservices.com/es/inicio">Santander Digital Services</a></strong> — Insurance area.
+        I lead strategy, delivery, and stakeholder alignment across 5 engineering areas with a team of 80+ professionals.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Off the clock: <strong className="text-stone-100">sci-fi books, motorcycles,</strong> and <strong className="text-stone-100">mountain trails</strong>.
@@ -100,7 +100,7 @@ const getAge: () => number = () => {
  * About section
  */
 export const aboutData: About = {
-  description: `With over ${getExperienceYears()} years in software engineering, I specialize in frontend and backend development — primarily Angular, Java, and Node.js — while leading cross-functional engineering teams. I focus on technical delivery, architecture decisions, and growing the people around me.`,
+  description: `Platform Lead Manager with ${getExperienceYears()}+ years in software engineering. I oversee strategy, delivery, and budget management across multiple engineering teams in the Insurance sector, while keeping a strong technical foundation. I work at the intersection of business, technology, and people — setting priorities with stakeholders, coordinating vendors, and helping my teams solve hard problems.`,
   aboutItems: [
     { label: 'Location', text: 'Madrid, Spain', Icon: MapIcon },
     { label: 'Age', text: getAge().toString(), Icon: CalendarIcon },
@@ -201,13 +201,16 @@ export const skills: SkillGroup[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'November 2022 - Present',
-    location: 'Santander Digital Services',
+    location: 'Santander Digital Services · Insurance',
     title: 'Platform Lead Manager',
     content: (
       <p>
-        Lead the end-to-end delivery of large-scale, customer-facing banking applications built with Angular, Java, and Spring Boot.
-        Manage and mentor a cross-functional team of 20+ engineers across frontend and backend disciplines.
-        Define technical roadmaps, coordinate with product and architecture teams, and drive alignment between business goals and engineering execution.
+        Report to the Technical Director of the Insurance area at Banco Santander.
+        Oversee 5 engineering areas — new product development, post-sales, data, internal data control, and maintenance — with a team of 80+ professionals across internal and external vendors.
+        Manage an annual technology budget of ~€20M, coordinating resource allocation and budget planning with internal teams and third-party suppliers.
+        Define joint strategies and set delivery priorities in collaboration with business stakeholders, ensuring value delivery within resource constraints.
+        Lead coordination with commercial partners and the Santander Group for information exchange processes and regulatory data flows.
+        Provide technical guidance to engineering teams on demand, bridging strategic leadership with hands-on problem solving.
       </p>
     ),
   },

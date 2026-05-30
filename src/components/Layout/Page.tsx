@@ -20,7 +20,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
       <Head>
         <title>{title}</title>
         <meta content={description} name="description" />
-        <meta name="keywords" content="Miguel Romero, Full Stack Engineer, Team Lead, Angular, Java, Node.js, Santander Digital Services, Software Engineering, Madrid, Spain" />
+        <meta name="keywords" content="Miguel Romero, Platform Lead Manager, Engineering Manager, Angular, Java, Node.js, Spring Boot, Santander Digital Services, Insurance Technology, Budget Management, Stakeholder Management, Vendor Management, Software Engineering, Madrid, Spain" />
         <meta name="author" content="Miguel Romero" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
@@ -100,11 +100,17 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
                 "React",
                 "Node.js",
                 "Java",
+                "Spring Boot",
                 "Golang",
                 "Software Engineering",
-                "Team Leadership"
+                "Engineering Leadership",
+                "Budget Management",
+                "Stakeholder Management",
+                "Vendor Management",
+                "Strategic Planning",
+                "Insurance Technology"
               ],
-              "description": "Platform Lead Manager with 11+ years of experience in software engineering, specializing in Angular, Java, Node.js, and leading cross-functional engineering teams."
+              "description": "Platform Lead Manager overseeing 5 engineering areas in the Insurance division of Banco Santander, with a team of 80+ professionals and a ~€20M annual budget. 11+ years of experience bridging technical leadership and strategic delivery."
             })
           }}
         />
